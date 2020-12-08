@@ -1,0 +1,31 @@
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: $header ;
+    text-align: center;
+   
+}   
+
+body{
+    font-family:sans-serif;
+    font-size:15px;
+    margin:10px;
+    background-color:$primary;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:$footer;
+    color:$footercol;
+    text-align: center;
+    height:40px;
+    margin-top: 5px;
+
+    @media screen and (min-width:640px){
+        grid-row: 4/5;
+    }
+} 
+

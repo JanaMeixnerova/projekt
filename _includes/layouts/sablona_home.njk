@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>   
+</head>
+
+
+
+<body>
+
+    <!-- <div class="kontejner"> -->
+    
+        <h1 class="header"> Doučování matematiky a fyziky</h1>
+
+    
+        <nav class="menu">
+
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/doucovani_matematiky">Doučování matematiky</a></li>
+                <li class="menu__item"><a class="menu__link" href="/doucovani_fyziky">Doučování fyziky</a></li>
+                <li class="menu__item"><a class="menu__link" href="/akutni_priklady">Řešení akutních příkladů</a></li>
+                <li class="menu__item"><a class="menu__link" href="/omne">O mně</a></li>
+                <li class="menu__item"><a class="menu__link" href="/podminky">Podmínky</a></li>
+                <li class="menu__item"><a class="menu__link" href="/kontakty">Kontakty</a></li>
+                <li class="menu__item"><a class="menu__link" href="/"> Úvodní strana </a></li>
+
+            </ul>
+
+        </nav>
+
+       <main class="main">
+     
+        {{content|safe}}
+    
+       </main>
+
+       
+       
+        <footer class="footer">
+            <p>Created by Jana Meixnerova 2020 </p>
+
+        </footer>
+
+
+
+    <!-- </div> -->
+</body>
+</html>

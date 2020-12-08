@@ -1,0 +1,57 @@
+.kontejner__fyzika {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 640px) {
+  .kontejner__akutni {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: 50px 200px 200px 50px;
+        grid-template-rows: 50px 200px 200px 50px;
+  }
+}
+
+.main__akutni--title {
+  margin: 10px;
+}
+
+@media screen and (min-width: 640px) {
+  .main__akutni--title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+.main__akutni--text {
+  margin: 0px;
+  text-align: justify;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 640px) {
+  .main__akutni--text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .akutni__photo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+/*# sourceMappingURL=akutni_priklady.css.map */

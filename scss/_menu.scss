@@ -1,0 +1,71 @@
+.menu__checkbox{
+   display:none;
+}
+
+
+.menu__toggler{
+    cursor:pointer;
+
+@media screen and (min-width:640px) {
+    display:none;
+}
+} 
+
+.menu__checkbox:checked ~ .menu__list{
+    display:block;
+}
+
+
+.menu__list{
+    display:none;
+    margin:0;
+    padding:0;
+    list-style:none;
+    background-color: $menu-color;
+    
+
+    @media screen and (min-width:640px){
+        display: flex !important;
+        width:100%;
+        justify-content: auto;
+        justify-items: auto;
+     
+    }
+    @media screen and (min-width:1100px){
+        line-height: 1.5em;
+
+    }
+}
+  
+
+.menu__item{
+    border-bottom: 1px solid $menu-text;
+    
+    @media screen and (min-width:640px){
+        
+        border-bottom: 0;
+        border-right: 1px solid $menu-text;
+        width:100%;
+        
+    }
+
+
+}
+
+.menu__link{
+    display:block;
+    padding:15px;
+    text-decoration: none;
+    color: $menu-text;
+}
+
+
+
+.menu__link:hover{
+    background-color:$menu-hover;
+}
+
+
+
+
+
